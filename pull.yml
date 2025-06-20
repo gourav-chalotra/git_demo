@@ -1,0 +1,16 @@
+on:
+  pull request:
+    type: [read, write]
+    branches:
+      - main
+
+jobs:
+    build:
+      run-on: ubuntu-latest
+      steps:
+        
+    publish:
+      runs-on: ubuntu-latest
+      needs: build
+      steps:
+    
